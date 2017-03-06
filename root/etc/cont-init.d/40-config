@@ -1,15 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-# create folders
-mkdir -p \
-	/config/cache
-
-# make symlink
-[[ ! -e /var/www/localhost/bbs ]] && \
-	ln -s /usr/share/webapps/bbs /var/www/localhost/bbs
-
 # permissions
 chown -R abc:abc \
 	/config \
-	/usr/share/webapps/bbs \
-	var/www/localhost/bbs
+	var/www/bbs
