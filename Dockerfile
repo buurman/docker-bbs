@@ -21,7 +21,7 @@ RUN \
 
 # install BBS
 RUN mkdir /var/www/bbs
-RUN git clone https://github.com/rvolz/BicBucStriim.git /var/www/bbs
+RUN git clone https://github.com/rvolz/BicBucStriim.git /var/www/localhost/bbs
 
 # add local files
 COPY root/ /
